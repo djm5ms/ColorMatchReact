@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Page</title>
+</head>
+<body>
+    <h1>Image Display</h1>
+    <ul>
+        {% for item in clothes %}
+        <li>
+            <img src="{{ item.getImg() }}" alt="Uploaded Image">
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
